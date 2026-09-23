@@ -19,7 +19,7 @@ fechar o app.
 - Cadastrar uma nova tarefa (título, descrição e, opcionalmente, data/horário)
 - Editar uma tarefa já existente
 - Marcar/desmarcar uma tarefa como concluída
-- Excluir uma tarefa
+- Excluir uma tarefa, com diálogo de confirmação antes da remoção definitiva
 - Destaque visual para tarefas atrasadas (prazo vencido e ainda não concluídas)
 - Persistência local com Room (SQLite)
 
@@ -186,6 +186,12 @@ estão em [`docs/evidencias`](docs/evidencias).
 | 7 | Exclusão de uma tarefa | ![Exclusão](docs/evidencias/07-tarefa-excluida.png) |
 | 8 | Navegação entre a lista e o formulário | ![Navegação](docs/evidencias/08-navegacao-formulario.png) |
 | 9 | Build do projeto sem erros | ![Build](docs/evidencias/09-build-sem-erros.png) |
+
+## Prova prática — confirmação de exclusão
+
+A exclusão de uma tarefa passa por um diálogo de confirmação Material 3 exibido sobre
+a própria tela da lista. O detalhamento da implementação e as evidências dessa etapa
+estão em **[EVIDENCIAS_EXCLUSAO.md](EVIDENCIAS_EXCLUSAO.md)**.
 
 ## Autor
 
