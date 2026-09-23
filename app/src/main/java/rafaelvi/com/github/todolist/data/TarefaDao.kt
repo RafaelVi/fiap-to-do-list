@@ -10,7 +10,10 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface TarefaDao {
 
-    @Query("SELECT * FROM tarefas ORDER BY dataCriacao DESC")
+    @Query("""
+        SELECT * FROM tarefas
+        ORDER BY dataHora IS NULL, dataHora ASC, dataCriacao DESC
+    """)
     fun listarTodas(): Flow<List<Tarefa>>
 
     @Insert
